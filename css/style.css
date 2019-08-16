@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.bannerImg {
+  width: 80%;
+  height: 20%;
+  text-align: center;
+  margin: auto;
+  display: block; }
+
 p {
   color: green; }
 
