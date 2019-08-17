@@ -1,10 +1,27 @@
 @import 'cssReset';
 @import 'variables';
+@import 'nav';
 @import 'mixin';
 @import 'images';
+@import 'desktop';
+@import 'para';
+@import 'button';
 
-p {
-	color: $fontColor;
+// position
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 
+.adjustPadding {
+	padding-left: 2*$padding;
+	padding-right: 2*$padding;
+}
+
+#sec1, #sec2, #sec3 {
+	@extend .adjustPadding;
+}

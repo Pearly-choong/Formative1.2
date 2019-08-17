@@ -7,3 +7,11 @@
 }
 
 
+.logoImg {
+	@include imgSize(2*$imgWidth, 2*$imgHeight)
+}
+
+
+.bckImg, .breakfast, .lunch, .kidsMenu {
+	@include imgSize(5*$imgWidth, 4*$imgHeight)
+}

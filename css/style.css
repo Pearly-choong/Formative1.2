@@ -1,6 +1,34 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+#navbar {
+  width: 50%;
+  height: auto;
+  position: relative; }
+  #navbar ul {
+    display: inline-flex;
+    margin: 0.8em; }
+    #navbar ul li {
+      padding-right: 4em;
+      padding-left: 2em; }
+      #navbar ul li a {
+        font-weight: bold;
+        font-size: 1.5em;
+        font-family: "Abel", sans-serif;
+        color: black; }
+      #navbar ul li a:hover {
+        color: #f3efdd;
+        background: #0d7339;
+        padding: 1em; }
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: table; }
 
 .bannerImg {
   width: 80%;
@@ -9,7 +37,76 @@
   margin: auto;
   display: block; }
 
-p {
-  color: green; }
+.logoImg {
+  width: 40%;
+  height: 40%; }
+
+.bckImg, .breakfast, .lunch, .kidsMenu {
+  width: 100%;
+  height: 80%; }
+
+@media only screen and (min-width: 992px) {
+  body {
+    background: #f6f6f6; }
+
+  .box {
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; }
+
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+    background: white;
+    border: 1px solid #BFBFBF;
+    box-shadow: 5px 10px 10px #888888; }
+
+  header {
+    height: 5em;
+    width: 100%;
+    margin: auto;
+    float: left;
+    padding-top: 1em;
+    padding-bottom: 2em; }
+
+  .logo {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    padding-top: 0.5em; }
+
+  hr {
+    margin-top: 1.5em;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); }
+
+  .extra {
+    padding-bottom: 4em; } }
+.introPara {
+  font-size: 1.1em;
+  font-family: "Abel", sans-serif;
+  padding: 2em; }
+
+.button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-family: "Abel", sans-serif; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.adjustPadding, #sec1, #sec2, #sec3 {
+  padding-left: 4em;
+  padding-right: 4em; }
 
 /*# sourceMappingURL=style.css.map */

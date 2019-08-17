@@ -3,22 +3,135 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/label.png">
-	<meta name="viewport" content="width=device-width, initial-scare=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Americanos Breakfast Restaurant </title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	
+	<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
 
-	<div class="imgDiv">
-		<!-- <img class="bannerImg" src="images/banner.jpg" alt="banner" height="50%" width="80%" > -->
-		<img class="bannerImg" src="images/banner.jpg" alt="banner">
-
+<!-- landing page banner -->
+	<div class="banner">
+		<div class="imgDiv">
+			<!-- <img class="bannerImg" src="images/banner.jpg" alt="banner" height="50%" width="80%" > -->
+			<img class="bannerImg" src="images/bannerCrop.jpg" alt="banner">
+		</div>
 	</div>
-	
+
+
+<div class="box">
+	<div class="wrapper">
+	<!-- logo and navbar -->
+		<header class="clearfix">
+			<div class="extra adjustPadding">
+				<div class="logo left">
+					<img class="logoImg" src="images/americanos.png" alt="logo">
+				</div>
+
+				<div id="navbar" class="right">
+					<ul>
+						<li><a href="home.html#sec1">Home</a></li>
+						<li><a href="home.html#sec2">Menu</a></li>
+						<li><a href="home.html#sec3">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+		</header>
+
+
+
+
+	<!-- Landing section -->
+		<section id="sec1">
+			<p class="introPara">With an focus on serving quality american diner style breakfasts to our devoted customers, Americanos is set on becoming an iconic part of the Wellington dining market. Why not come and find out for yourself what makes Americanos an essential start to a Wellington day.</p>
+			<div class="container">
+				<img class="bckImg" src="images/background.jpg" alt="background">
+				<a class="button" href="">BOOK A TABLE</a>
+				<br>
+				<div class="info">
+					<p>Tel: 04 499 52542</p>
+					<br>
+					<p>Monday - Friday : 6.30am - 2.00pm</p>
+					<p>Saturday - Sunday: 8.00am - 2.00pm<p>
+					<br>
+				</div>
+			</div>
+		</section>
+
+
+	<!-- Menu Section -->
+		<section id="sec2">
+			<h1>OUR MENU</h1>
+
+			<div class="menuRow">
+				<div class="menCol">
+					<h2>BREAKFAST</h2>
+					<img class="breakfast" src="images/breakfastCrop.jpg" alt="breakfast">
+				</div>
+
+				<div class="menuCol">
+					<h2>LUNCH</h2>
+					<img class="lunch" src="images/lunchCrop.jpg" alt="lunch">
+				</div>
+
+				<div class="menuCol">
+					<h2>KIDS MENU</h2>
+					<img class="kidsMenu" src="images/kidsCrop.jpg" alt="kidsMenu">
+				</div>
+			</div
+		</section>
+
+
+	<!-- Contact Section  -->
+		<section id="sec3">
+			<h1>CONTACT US</h1>
+
+			<form class="contactForm">
+				<input type="text" name="name" maxlength="20" placeholder="Name">
+				<br>
+				<input type="text" name="email" maxlength="20" placeholder="Email">
+				<br>
+				<input type="text" name="subject" placeholder="Subject">
+				<br>
+				<textarea name="text" placeholder="Message"></textarea>
+				<br>
+				<input type="submit" class="ContactSubmit" value="submit">
+			</form>
+
+			<div class="locationInfo">
+				<p>Come and find out for yourself what makes Americanos an essential start to a Wellington day, the American food with a kiwi twist</p>
+				<br>
+				<p><bold>Email:</bold>info@americanos.co.nz</p>
+				<br>
+				<p><bold>Address:</bold>Dunbar Sloan Downstairs, 32 Waring Taylor Street, Lambton, Wellington CBD.</p>
+				<br>
+
+				<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.230821544791!2d174.7748441160573!3d-41.28208064806944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38ae2b396688f1%3A0xf9ff50d861ad00f7!2s32+Waring+Taylor+St%2C+Wellington%2C+6011!5e0!3m2!1sen!2snz!4v1566035916577!5m2!1sen!2snz" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+
+
+	<!-- footer with social media icon and copyright -->
+		<footer>
+			<div class="socialIcons">
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-tripadvisor"></i>
+			</div>
+
+			<div class="copyright">
+				<p>&copy; 2019 Americanos Breakfast Restaurant. All rights reserved.</p>
+			</div>
+
+		</footer>
+	</div>
+</div>
+
 
 </body>
 

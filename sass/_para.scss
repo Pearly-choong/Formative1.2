@@ -1,0 +1,3 @@
+.introPara {
+  @include paraStyle ($paraFontSize, $fontFamily, $padding)
+}

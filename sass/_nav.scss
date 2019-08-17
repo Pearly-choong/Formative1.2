@@ -1,0 +1,32 @@
+#navbar {
+  width: 50%;
+  height: auto;
+  position: relative;
+  ul {
+      display: inline-flex;
+      margin: $margin/2.5;
+      li {
+          padding-right: 2*$padding;
+          padding-left: $padding;
+         a{
+           font-weight: bold;
+           font-size: 1.5em;
+           font-family: $fontFamily;
+           color: black;
+         }
+         a:hover {
+           color: $navTextColor;
+           background: #0d7339;
+           padding: $padding/2;
+         }
+     }
+  }
+
+}
+
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
