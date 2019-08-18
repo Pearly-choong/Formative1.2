@@ -9,3 +9,17 @@
   width: $w;
   height: $h;
 }
+
+@mixin imgEffect ($position,$margin,$overflow){
+  position: $position;
+  margin: $margin;
+  overflow: $overflow;
+}
+//
+// @mixin imgEffectZoom ($maxW, $trans, $display, $imgW, $imgH){
+//   max-width: $maxW;
+//   transition: $trans;
+//   display: $display;
+//   width: $imgW;
+//   height: $imgH;
+// }

@@ -6,15 +6,12 @@
 @import 'desktop';
 @import 'para';
 @import 'button';
+@import 'contactForm';
+@import 'socialMediaIcon';
+@import 'mobile';
 
-// position
-.left {
-  float: left;
-}
 
-.right {
-  float: right;
-}
+
 
 
 .adjustPadding {
@@ -24,4 +21,19 @@
 
 #sec1, #sec2, #sec3 {
 	@extend .adjustPadding;
+  padding-bottom: $padding;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: $padding;
+  padding-bottom: $padding/2;
+}
+
+
+.copyright {
+  padding: $padding;
+  text-align: center;
 }

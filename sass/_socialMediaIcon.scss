@@ -1,0 +1,14 @@
+.fab {
+  font-size: $h1fontSize;
+  padding: $padding/2.5;
+
+}
+
+
+.socialIcons a {
+  color: black;
+}
+
+.fab:hover {
+  color: $greenColor;
+}

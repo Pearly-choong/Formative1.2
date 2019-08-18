@@ -1,7 +1,7 @@
 @media only screen and (min-width: 992px){
 
   body {
-  	background: #f6f6f6;
+  	background: $bodyBckColor;
   }
 
 
@@ -10,7 +10,7 @@
   	margin-left: auto;
    	margin-right: auto;
   	width: 80%;
-
+    height: auto;
   }
 
   .wrapper {
@@ -45,18 +45,56 @@
     padding-top: 0.5em;
   }
 
-  hr {
+  // position
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .decoWrapper {
     margin-top: 1.5em;
     height: 12px;
     border: 0;
     box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
   }
 
-  .extra {
+
+  .extraBottomPadding {
     padding-bottom: 2*$padding;
   }
 
+  .menuRow {
+    overflow: auto;
+    width: 100%;
+    padding-bottom: $padding;
 
+  }
+
+  .menuCol {
+    width: 33.3%;
+    float: left;
+    margin: auto;
+    padding: 0em 0.5em 0em 0.5em;
+  }
+
+  .contactCol {
+    width: 50%;
+    float: left;
+    margin: auto;
+    padding: $padding;
+  }
+
+  .mapSize {
+    width: 900px;
+    height: 200px;
+  }
+
+  .info {
+    display: none;
+  }
 
 
 }

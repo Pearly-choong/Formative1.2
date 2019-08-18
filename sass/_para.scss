@@ -1,3 +1,24 @@
 .introPara {
-  @include paraStyle ($paraFontSize, $fontFamily, $padding)
+  @include paraStyle ($paraFontSize, $fontFamily, $padding);
+}
+
+
+h1 {
+  @include paraStyle ($h1fontSize, $fontFamily, $padding);
+  text-align: center;
+  padding-bottom: $padding;
+}
+
+
+h2 {
+  @include paraStyle (1.5em, $fontFamily, $padding/2.5);
+  text-align: center;
+}
+
+
+
+// Paragraph from contact section with map
+.paraText {
+  @extend .introPara;
+  padding-top: 0;
 }

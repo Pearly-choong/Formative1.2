@@ -16,7 +16,6 @@
 <!-- landing page banner -->
 	<div class="banner">
 		<div class="imgDiv">
-			<!-- <img class="bannerImg" src="images/banner.jpg" alt="banner" height="50%" width="80%" > -->
 			<img class="bannerImg" src="images/bannerCrop.jpg" alt="banner">
 		</div>
 	</div>
@@ -26,7 +25,7 @@
 	<div class="wrapper">
 	<!-- logo and navbar -->
 		<header class="clearfix">
-			<div class="extra adjustPadding">
+			<div class="extraBottomPadding adjustPadding">
 				<div class="logo left">
 					<img class="logoImg" src="images/americanos.png" alt="logo">
 				</div>
@@ -39,24 +38,23 @@
 					</ul>
 				</div>
 			</div>
-			<hr>
+			<hr class="decoWrapper">
 		</header>
-
-
 
 
 	<!-- Landing section -->
 		<section id="sec1">
 			<p class="introPara">With an focus on serving quality american diner style breakfasts to our devoted customers, Americanos is set on becoming an iconic part of the Wellington dining market. Why not come and find out for yourself what makes Americanos an essential start to a Wellington day.</p>
 			<div class="container">
-				<img class="bckImg" src="images/background.jpg" alt="background">
-				<a class="button" href="">BOOK A TABLE</a>
+				<img class="bckImg" src="images/backgroundCrop.jpg" alt="background">
+				<a class="button" href="">Book A Table</a>
 				<br>
+				<!-- only display on table and mobile version  -->
 				<div class="info">
-					<p>Tel: 04 499 52542</p>
+					<p>Tel : 04 499 52542</p>
 					<br>
 					<p>Monday - Friday : 6.30am - 2.00pm</p>
-					<p>Saturday - Sunday: 8.00am - 2.00pm<p>
+					<p>Saturday - Sunday : 8.00am - 2.00pm<p>
 					<br>
 				</div>
 			</div>
@@ -68,21 +66,40 @@
 			<h1>OUR MENU</h1>
 
 			<div class="menuRow">
-				<div class="menCol">
-					<h2>BREAKFAST</h2>
-					<img class="breakfast" src="images/breakfastCrop.jpg" alt="breakfast">
+				<div class="menuCol imageBox">
+					<img class="breakfast" src="images/breakfastCrop2.jpg" alt="breakfast">
+						<div class="overlay">
+							<div class="overlayText"><a href="">Breakfast</a></div>
+						</div>
+					<!-- <h2>BREAKFAST</h2> -->
 				</div>
 
-				<div class="menuCol">
-					<h2>LUNCH</h2>
+				<div class="menuCol imageBox">
 					<img class="lunch" src="images/lunchCrop.jpg" alt="lunch">
+					<div class="overlay">
+						<div class="overlayText"><a href="">Lunch</a></div>
+					</div>
+					<!-- <h2>LUNCH</h2> -->
 				</div>
 
-				<div class="menuCol">
-					<h2>KIDS MENU</h2>
+				<div class="menuCol imageBox">
 					<img class="kidsMenu" src="images/kidsCrop.jpg" alt="kidsMenu">
+					<div class="overlay">
+						<div class="overlayText"><a href="">Kids Menu</a></div>
+					</div>
+					<!-- <h2>KIDS MENU</h2> -->
 				</div>
-			</div
+			</div>
+
+			<div class="menuRow">
+				<div class="imageBoxSpecial">
+					<img class="special" src="images/specialCrop.jpg" alt="special">
+					<div class="overlay">
+						<div class="overlayTextSpecial"><a href="">Special</a></div>
+					</div>
+					<!-- <h2>SPECIAL</h2> -->
+				</div>
+			</div>
 		</section>
 
 
@@ -90,47 +107,63 @@
 		<section id="sec3">
 			<h1>CONTACT US</h1>
 
-			<form class="contactForm">
-				<input type="text" name="name" maxlength="20" placeholder="Name">
-				<br>
-				<input type="text" name="email" maxlength="20" placeholder="Email">
-				<br>
-				<input type="text" name="subject" placeholder="Subject">
-				<br>
-				<textarea name="text" placeholder="Message"></textarea>
-				<br>
-				<input type="submit" class="ContactSubmit" value="submit">
-			</form>
+			<div class="contactRow">
+					<form class="contactForm contactCol clearfix">
+						<input type="text" name="name" maxlength="20" placeholder="Name">
+						<br>
+						<input type="text" name="email" maxlength="20" placeholder="Email">
+						<br>
+						<input type="text" name="subject" placeholder="Subject">
+						<br>
+						<textarea name="text" placeholder="Message" style="height:200px"></textarea>
+						<br>
+						<input type="submit" class="contactSubmitBtn" value="Submit">
+					</form>
 
-			<div class="locationInfo">
-				<p>Come and find out for yourself what makes Americanos an essential start to a Wellington day, the American food with a kiwi twist</p>
-				<br>
-				<p><bold>Email:</bold>info@americanos.co.nz</p>
-				<br>
-				<p><bold>Address:</bold>Dunbar Sloan Downstairs, 32 Waring Taylor Street, Lambton, Wellington CBD.</p>
-				<br>
+					<br>
 
-				<div class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.230821544791!2d174.7748441160573!3d-41.28208064806944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38ae2b396688f1%3A0xf9ff50d861ad00f7!2s32+Waring+Taylor+St%2C+Wellington%2C+6011!5e0!3m2!1sen!2snz!4v1566035916577!5m2!1sen!2snz" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
+					<div class="locationInfo contactCol">
+						<p><strong>Email: </strong></p>
+						<p>info@americanos.co.nz</p>
+						<br>
+						<p><strong>Address: </strong></p>
+						<p>Dunbar Sloan Downstairs, 32 Waring Taylor Street, Lambton, Wellington CBD.</p>
+						<br>
+						<p><strong>Tel: </strong></p>
+					 	<p>04 499 52542</p>
+						<br>
+						<p><strong>Opening Hours:</strong></p>
+						<p>Monday - Friday : 6.30am - 2.00pm</p>
+						<p>Saturday - Sunday : 8.00am - 2.00pm<p>
+						<br>
+					</div>
 			</div>
+
+				<p class="paraText">Come and find out for yourself what makes Americanos an essential start to a Wellington day, the American food with a kiwi twist</p>
+				<br>
+				<div class="map">
+					<iframe class="mapSize" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.230821544791!2d174.7748441160573!3d-41.28208064806944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38ae2b396688f1%3A0xf9ff50d861ad00f7!2s32+Waring+Taylor+St%2C+Wellington%2C+6011!5e0!3m2!1sen!2snz!4v1566035916577!5m2!1sen!2snz" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
 		</section>
 
 
 	<!-- footer with social media icon and copyright -->
 		<footer>
 			<div class="socialIcons">
-				<i class="fab fa-facebook-f"></i>
-				<i class="fab fa-tripadvisor"></i>
+				<a href="https://www.facebook.com/americanosbreakfastrestaurant/" target="_blank"<i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.tripadvisor.co.nz/Restaurant_Review-g255115-d10542860-Reviews-Americanos_Breakfast_Restaurant-Wellington_Greater_Wellington_North_Island.html" target="_blank"<i class="fab fa-tripadvisor"></i></a>
 			</div>
-
-			<div class="copyright">
-				<p>&copy; 2019 Americanos Breakfast Restaurant. All rights reserved.</p>
-			</div>
-
 		</footer>
+
 	</div>
+
+	<div class="copyright">
+		<p>&copy; 2019 Americanos Breakfast Restaurant. All rights reserved.</p>
+	</div>
+
 </div>
+
+
 
 
 </body>

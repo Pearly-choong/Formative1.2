@@ -1,8 +1,49 @@
+.container {
+  position: relative;
+  text-align: center;
+  padding-bottom : $padding;
+}
+
+
 .button {
+  @include paraStyle($h1fontSize,$fontFamily, 0);
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: $h1fontSize;
-  font-family: $fontFamily;
+  padding: 0.5em 1.3em 0.5em 1.3em;
+  font-weight: bold;
+  background-color: $greenColor;
+  border: 2px solid $navTextColor;
+  color: $navTextColor;
+  opacity: 0.8;
+  border-radius : 4px;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  // background-color: $navTextColor;
+  // border: 2px solid $greenColor;
+  // color: $greenColor;
+}
+
+
+
+
+.button:hover, .contactSubmitBtn:hover {
+  // color: $greenColor;
+  // background-color: $navTextColor;
+  opacity: 1.0;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+
+//  Style Contact Form Submit Button
+.contactSubmitBtn {
+    @include paraStyle($paraFontSize,$fontFamily,0);
+    padding: 0.5em 1.3em 0.5em 1.3em;
+    font-weight: bold;
+    background-color: $greenColor;
+    border: 2px solid $navTextColor;
+    color: $navTextColor;
+    opacity: 0.8;
+    border-radius : 4px;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
