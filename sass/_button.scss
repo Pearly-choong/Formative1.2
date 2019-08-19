@@ -16,7 +16,7 @@
   background-color: $greenColor;
   border: 2px solid $navTextColor;
   color: $navTextColor;
-  opacity: 0.8;
+  opacity: 1.0;
   border-radius : 4px;
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   // background-color: $navTextColor;
@@ -30,7 +30,7 @@
 .button:hover, .contactSubmitBtn:hover {
   // color: $greenColor;
   // background-color: $navTextColor;
-  opacity: 1.0;
+  opacity: 0.8;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
@@ -43,7 +43,29 @@
     background-color: $greenColor;
     border: 2px solid $navTextColor;
     color: $navTextColor;
-    opacity: 0.8;
+    opacity: 1.0;
     border-radius : 4px;
     transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+
+// back to top Button
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 99;
+  font-size: 0.8em;
+  border: none;
+  outline: none;
+  background-color: $greenColor;
+  color:  $navTextColor;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#myBtn:hover {
+  color: black;
 }

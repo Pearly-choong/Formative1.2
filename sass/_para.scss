@@ -1,5 +1,6 @@
 .introPara {
   @include paraStyle ($paraFontSize, $fontFamily, $padding);
+  line-height: 25px;
 }
 
 

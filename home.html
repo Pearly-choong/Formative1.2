@@ -7,6 +7,7 @@
 	<title>Americanos Breakfast Restaurant </title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
 </head>
 
@@ -15,9 +16,7 @@
 
 <!-- landing page banner -->
 	<div class="banner">
-		<div class="imgDiv">
 			<img class="bannerImg" src="images/bannerCrop.jpg" alt="banner">
-		</div>
 	</div>
 
 
@@ -25,7 +24,7 @@
 	<div class="wrapper">
 	<!-- logo and navbar -->
 		<header class="clearfix">
-			<div class="extraBottomPadding adjustPadding">
+			<div class="logoContainer adjustPadding">
 				<div class="logo left">
 					<img class="logoImg" src="images/americanos.png" alt="logo">
 				</div>
@@ -44,18 +43,19 @@
 
 	<!-- Landing section -->
 		<section id="sec1">
-			<p class="introPara">With an focus on serving quality american diner style breakfasts to our devoted customers, Americanos is set on becoming an iconic part of the Wellington dining market. Why not come and find out for yourself what makes Americanos an essential start to a Wellington day.</p>
+			<p class="introPara paraPosition">With an focus on serving quality american diner style breakfasts to our devoted customers, Americanos is set on becoming an iconic part of the Wellington dining market. Why not come and find out for yourself what makes Americanos an essential start to a Wellington day.</p>
 			<div class="container">
 				<img class="bckImg" src="images/backgroundCrop.jpg" alt="background">
-				<a class="button" href="">Book A Table</a>
+				<div class="btnPosition">
+					<a class="button" href="">Book A Table</a>
+				</div>
 				<br>
 				<!-- only display on table and mobile version  -->
 				<div class="info">
 					<p>Tel : 04 499 52542</p>
 					<br>
-					<p>Monday - Friday : 6.30am - 2.00pm</p>
-					<p>Saturday - Sunday : 8.00am - 2.00pm<p>
-					<br>
+					<p>Mon-Fri : 6.30am - 2.00pm</p>
+					<p>Sat-Sun : 8.00am - 2.00pm<p>
 				</div>
 			</div>
 		</section>
@@ -117,7 +117,9 @@
 						<br>
 						<textarea name="text" placeholder="Message" style="height:200px"></textarea>
 						<br>
-						<input type="submit" class="contactSubmitBtn" value="Submit">
+						<div class="center">
+							<input type="submit" class="contactSubmitBtn" value="Submit">
+						</div>
 					</form>
 
 					<br>
@@ -163,8 +165,10 @@
 
 </div>
 
+<!-- back to top button -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
 
-
+		<script src="js/script.js"></script>
 
 </body>
 

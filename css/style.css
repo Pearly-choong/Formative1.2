@@ -11,10 +11,10 @@
   position: relative; }
   #navbar ul {
     display: inline-flex;
-    margin: 0.8em; }
+    margin: 5%; }
     #navbar ul li {
-      padding-right: 4em;
-      padding-left: 2em; }
+      padding-right: 8%;
+      padding-left: 8%; }
       #navbar ul li a {
         font-weight: bold;
         font-size: 1.5em;
@@ -23,17 +23,19 @@
       #navbar ul li a:hover {
         color: #f3efdd;
         background: #0d7339;
-        padding: 1em; }
+        padding: 24%; }
 
 .clearfix {
   content: "";
   clear: both;
   display: table; }
 
+.banner {
+  text-align: center; }
+
 .bannerImg {
   width: 80%;
   height: 20%;
-  text-align: center;
   margin: auto;
   display: block; }
 
@@ -126,6 +128,9 @@
   padding: 0; }
 
 @media only screen and (min-width: 992px) {
+  .info {
+    display: none; }
+
   body {
     background: #f6f6f6; }
 
@@ -143,76 +148,75 @@
     height: auto;
     background: white;
     border: 1px solid #BFBFBF;
-    box-shadow: 5px 10px 10px #888888; }
+    box-shadow: 5px 10px 10px #888888; } }
+header {
+  height: 5em;
+  width: 100%;
+  margin: auto;
+  float: left;
+  padding-top: 4%;
+  padding-bottom: 4%; }
 
-  header {
-    height: 5em;
-    width: 100%;
-    margin: auto;
-    float: left;
-    padding-top: 1em;
-    padding-bottom: 2em; }
+.logo {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  padding-top: 0.5em; }
 
-  .logo {
-    position: relative;
-    width: 50%;
-    margin: auto;
-    padding-top: 0.5em; }
+.left {
+  float: left; }
 
-  .left {
-    float: left; }
+.right {
+  float: right;
+  padding-left: 16%; }
 
-  .right {
-    float: right; }
+.decoWrapper {
+  margin-top: 1em;
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); }
 
-  .decoWrapper {
-    margin-top: 1.5em;
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); }
+.logoContainer {
+  padding-bottom: 6%; }
 
-  .extraBottomPadding {
-    padding-bottom: 4em; }
+.menuRow, .contactRow {
+  overflow: auto;
+  width: 100%;
+  padding-bottom: 4%; }
 
-  .menuRow, .contactRow {
-    overflow: auto;
-    width: 100%;
-    padding-bottom: 2em; }
+.menuCol {
+  width: 33.3%;
+  float: left;
+  margin: auto;
+  padding: 0em 0.5em 0em 0.5em; }
 
-  .menuCol {
-    width: 33.3%;
-    float: left;
-    margin: auto;
-    padding: 0em 0.5em 0em 0.5em; }
+.contactCol {
+  width: 50%;
+  float: left;
+  margin: auto;
+  padding: 4%; }
 
-  .contactCol {
-    width: 50%;
-    float: left;
-    margin: auto;
-    padding: 2em; }
+.mapSize {
+  width: 900px;
+  height: 200px; }
 
-  .mapSize {
-    width: 900px;
-    height: 200px; }
-
-  .info {
-    display: none; } }
 .introPara, .paraText, .locationInfo {
   font-size: 1.1em;
   font-family: "Abel", sans-serif;
-  padding: 2em; }
+  padding: 4%;
+  line-height: 25px; }
 
 h1 {
   font-size: 2em;
   font-family: "Abel", sans-serif;
-  padding: 2em;
+  padding: 4%;
   text-align: center;
-  padding-bottom: 2em; }
+  padding-bottom: 4%; }
 
 h2 {
   font-size: 1.5em;
   font-family: "Abel", sans-serif;
-  padding: 0.8em;
+  padding: 1.6%;
   text-align: center; }
 
 .paraText {
@@ -221,7 +225,7 @@ h2 {
 .container {
   position: relative;
   text-align: center;
-  padding-bottom: 2em; }
+  padding-bottom: 4%; }
 
 .button {
   font-size: 2em;
@@ -236,12 +240,12 @@ h2 {
   background-color: #0d7339;
   border: 2px solid #f3efdd;
   color: #f3efdd;
-  opacity: 0.8;
+  opacity: 1.0;
   border-radius: 4px;
   transition: background-color 0.2s ease-out, color 0.2s ease-out; }
 
 .button:hover, .contactSubmitBtn:hover {
-  opacity: 1.0;
+  opacity: 0.8;
   transition: background-color 0.3s ease-in, color 0.3s ease-in; }
 
 .contactSubmitBtn {
@@ -253,14 +257,32 @@ h2 {
   background-color: #0d7339;
   border: 2px solid #f3efdd;
   color: #f3efdd;
-  opacity: 0.8;
+  opacity: 1.0;
   border-radius: 4px;
   transition: background-color 0.2s ease-out, color 0.2s ease-out; }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 99;
+  font-size: 0.8em;
+  border: none;
+  outline: none;
+  background-color: #0d7339;
+  color: #f3efdd;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px; }
+
+#myBtn:hover {
+  color: black; }
+
 input[type=text], textarea {
   width: 100%;
-  padding: 0.8em;
-  margin-top: 0.8em;
+  padding: 1.6%;
+  margin-top: 2%;
   border-radius: 5px; }
 
 .map {
@@ -268,7 +290,7 @@ input[type=text], textarea {
 
 .fab {
   font-size: 2em;
-  padding: 0.8em; }
+  padding: 1.6%; }
 
 .socialIcons a {
   color: black; }
@@ -277,36 +299,41 @@ input[type=text], textarea {
   color: #0d7339; }
 
 @media only screen and (max-width: 600px) {
-  #sec2, #sec3 {
-    width: 100%;
-    height: 667px; }
-
   #sec1 {
     width: 100%;
     height: 667px;
     background-image: url("../images/background.jpg");
-    background-position: center;
-    background-size: 100% 400px;
-    background-repeat: no-repeat; }
+    background-position: top;
+    background-size: 100% 430px;
+    background-repeat: no-repeat;
+    padding: 0; }
 
-  .info {
-    font-size: 1em;
-    font-family: "Abel", sans-serif;
-    padding: 1em;
-    position: absolute;
-    top: 50%;
-    color: white;
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-align: center; }
+  #sec2 {
+    width: 100%;
+    height: 700px;
+    padding: 0; }
 
-  .banner, .introPara, .paraText, .locationInfo {
+  #sec3 {
+    width: 100%;
+    height: 1200px;
+    padding: 0; }
+
+  .banner, .decoWrapper, .bckImg {
     display: none; }
 
   .left, .right {
     float: left;
     width: 100%;
-    margin: auto; }
+    margin: auto;
+    padding: 0; }
+
+  body {
+    margin: 0;
+    padding: 0; }
+
+  header {
+    margin: 0;
+    background: white; }
 
   .box {
     background: white;
@@ -314,22 +341,88 @@ input[type=text], textarea {
     width: 100%;
     height: auto; }
 
-  .bckImg {
-    display: none; } }
+  .wrapper {
+    background: white;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    box-shadow: none; }
+
+  .adjustPadding, #sec1, #sec2, #sec3 {
+    padding: 0; }
+
+  .logo {
+    text-align: center; }
+
+  #navbar {
+    width: 100%;
+    text-align: center;
+    padding-top: 4%; }
+    #navbar ul li {
+      padding-left: 7%;
+      padding-right: 7%; }
+      #navbar ul li a:hover {
+        color: #f3efdd;
+        background: #0d7339;
+        padding: 2%; }
+
+  .button {
+    position: absolute;
+    font-size: 1.3333333333em;
+    font-family: "Abel", sans-serif;
+    padding: 0;
+    top: 650%;
+    padding: 0.5em 1.1em 0.5em 1.1em; }
+
+  .info {
+    font-size: 1em;
+    font-family: "Abel", sans-serif;
+    padding: 4%;
+    position: absolute;
+    top: 700%;
+    right: 3px;
+    color: white;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: right;
+    margin-top: 25%; }
+
+  .paraPosition {
+    position: absolute;
+    top: 67%; }
+
+  .menuCol, .contactCol {
+    width: 100%;
+    padding: 4%; }
+
+  .locationInfo, .center {
+    text-align: center; }
+
+  .contactSubmitBtn {
+    padding: 0.5em 1.7em 0.5em 1.7em;
+    margin-bottom: 5%; }
+
+  .mapSize {
+    width: 300px;
+    height: 200px; }
+
+  .copyright {
+    margin-left: 10%;
+    margin-right: 10%; } }
 .adjustPadding, #sec1, #sec2, #sec3 {
-  padding-left: 4em;
-  padding-right: 4em; }
+  padding-left: 8%;
+  padding-right: 8%; }
 
 #sec1, #sec2, #sec3 {
-  padding-bottom: 2em; }
+  padding-bottom: 4%; }
 
 footer {
   text-align: center;
-  padding: 2em;
-  padding-bottom: 1em; }
+  padding: 4%;
+  padding-bottom: 2%; }
 
 .copyright {
-  padding: 2em;
+  padding: 4%;
   text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

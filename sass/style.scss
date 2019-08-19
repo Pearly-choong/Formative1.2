@@ -1,7 +1,7 @@
 @import 'cssReset';
 @import 'variables';
-@import 'nav';
 @import 'mixin';
+@import 'nav';
 @import 'images';
 @import 'desktop';
 @import 'para';
@@ -20,7 +20,7 @@
 }
 
 #sec1, #sec2, #sec3 {
-	@extend .adjustPadding;
+  @extend .adjustPadding;
   padding-bottom: $padding;
 }
 

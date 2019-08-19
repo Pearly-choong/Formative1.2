@@ -4,20 +4,21 @@
   position: relative;
   ul {
       display: inline-flex;
-      margin: $margin/2.5;
+      margin: $margin;
       li {
           padding-right: 2*$padding;
-          padding-left: $padding;
+          padding-left: 2*$padding;
          a{
            font-weight: bold;
            font-size: 1.5em;
            font-family: $fontFamily;
            color: black;
+
          }
          a:hover {
            color: $navTextColor;
-           background: #0d7339;
-           padding: $padding/2;
+           background: $greenColor;
+           padding: 6*$padding;
          }
      }
   }

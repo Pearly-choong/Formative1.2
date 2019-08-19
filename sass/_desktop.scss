@@ -1,30 +1,40 @@
 @media only screen and (min-width: 992px){
 
+  .info {
+    display: none;
+  }
+
   body {
-  	background: $bodyBckColor;
+    background: $bodyBckColor;
+    // background: green;
   }
 
 
-  .box {
-  	background: white;
-  	margin-left: auto;
-   	margin-right: auto;
-  	width: 80%;
-    height: auto;
-  }
+    .box {
+    	background: white;
+    	margin-left: auto;
+     	margin-right: auto;
+    	width: 80%;
+      height: auto;
+    }
 
-  .wrapper {
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 70%;
-  	height: auto;
-  	background: white;
-  	border: 1px solid #BFBFBF;;
-  	box-shadow: 5px 10px 10px #888888;
-  	// padding-left: 2*$padding;
-  	// padding-right: 2*$padding;
+    .wrapper {
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 70%;
+    	height: auto;
+    	background: white;
+    	border: 1px solid #BFBFBF;;
+    	box-shadow: 5px 10px 10px #888888;
+    	// padding-left: 2*$padding;
+    	// padding-right: 2*$padding;
 
-  }
+    }
+
+
+}
+
+
 
   header {
   	height: 5em;
@@ -32,7 +42,7 @@
   	width: 100%;
   	margin: auto;
   	float: left;
-    padding-top: $padding/2;
+    padding-top: $padding;
     padding-bottom: $padding;
 
   }
@@ -52,18 +62,19 @@
 
   .right {
     float: right;
+    padding-left: 4*$padding;
   }
 
   .decoWrapper {
-    margin-top: 1.5em;
+    margin-top: 1em;
     height: 12px;
     border: 0;
     box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
   }
 
 
-  .extraBottomPadding {
-    padding-bottom: 2*$padding;
+  .logoContainer {
+    padding-bottom: 1.5*$padding;
   }
 
   .menuRow {
@@ -91,10 +102,3 @@
     width: 900px;
     height: 200px;
   }
-
-  .info {
-    display: none;
-  }
-
-
-}
