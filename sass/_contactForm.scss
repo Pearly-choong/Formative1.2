@@ -13,7 +13,9 @@ input[type=text], textarea {
 
 
 .locationInfo {
-  @extend .introPara;
+  @include paraStyle ($paraFontSize, $fontFamily, $padding/2);
+  padding-left: 10%;
+  line-height: 25px;
 }
 
 
