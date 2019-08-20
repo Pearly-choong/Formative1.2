@@ -1,28 +1,28 @@
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   #sec1 {
     width: 100%;
-    height: 667px;
-    background-image: url('../images/background.jpg');
-    background-position: top;
-    background-size: 100% 430px;
-    background-repeat: no-repeat;
+    height: 700px;
+    // background-image: url('../images/background.jpg');
+    // background-position: top;
+    // background-size: 100% 430px;
+    // background-repeat: no-repeat;
     padding: 0;
   }
 
    #sec2 {
     width: 100%;
-    height: 700px;
+    height: 1100px;
     padding: 0;
   }
 
   #sec3 {
     width: 100%;
-    height: 1200px;
+    height: 800px;
     padding: 0;
   }
 
 
-  .banner,.decoWrapper, .bckImg {
+  .banner,.decoWrapper {
     display: none;
   }
 
@@ -41,6 +41,7 @@
   header {
     margin: 0;
     background: white;
+    width: 100%;
   }
 
   .box {
@@ -64,16 +65,19 @@
 
   .logo {
     text-align: center;
+    margin-bottom: $margin;
   }
 
   #navbar {
   width: 100%;
   text-align: center;
-  padding-top: $padding;
-  ul {
+  padding-top: $padding/2;
+  // box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.5);
+    ul {
+      margin: $margin/2;
       li {
-          padding-left: 7%;
-          padding-right: 7%;
+          padding-left: 10%;
+          padding-right: 10%;
          a{
 
          }
@@ -88,13 +92,17 @@
   } //end of navbar
 
 
+
   .button {
     position: absolute;
     @include paraStyle($h1fontSize/1.5,$fontFamily, 0);
-    top: 650%;
-    // left: 50%;
+    top: 80px;
+    left: 250px;
+    z-index: 2;
     // transform: translate(-50%, -50%);
     padding: 0.5em 1.1em 0.5em 1.1em;
+    width: 200px;
+    height: 50px;
 
   }
 
@@ -102,26 +110,39 @@
   .info {
     @include paraStyle(1em,$fontFamily,$padding);
     position: absolute;
-    top: 700%;
-    right: 3px;
+    top: 160px;
+    right: 35px;
     // transform: translate(-50%, -50%);
     color: white;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.6);
-    text-align: right;
-    margin-top: 5*$margin;
+    // text-align: right;
+    // margin-top: 5*$margin;
   }
 
-
-  .paraPosition {
-    position: absolute;
-    top: 67%;
+  .introPara, .overlay {
+    display: none;
   }
+  // .paraPosition {
+  //    position: absolute;
+  //    top: 67%;
+  // }
 
   .menuCol, .contactCol {
     width: 100%;
     padding: $padding;
   }
+
+  .textDisplay {
+    position: absolute;
+    @include paraStyle($h1fontSize,$fontFamily, 0);
+    color: $navTextColor;
+    top: 50px;
+    left: 40px;
+    z-index: 2;
+
+  }
+
 
   .locationInfo, .center {
     text-align: center;
@@ -133,7 +154,7 @@
   }
 
   .mapSize {
-    width: 300px;
+    width: 400px;
     height: 200px;
   }
 
@@ -142,5 +163,70 @@
     margin-right: 2*$margin;
   }
 
-  
+  .container {
+    // width: 100%;
+    height: 400px;
+  }
+
+}
+
+
+@media only screen and (max-width: 375px){
+  #sec1 {
+    height: 667px;
+    padding: 0;
+  }
+
+   #sec2 {
+    height: 700px;
+    padding: 0;
+  }
+
+  #sec3 {
+    height: 700px;
+    padding: 0;
+  }
+
+  .button {
+    top: 70px;
+    left: 170px;
+    z-index: 2;
+    // padding: 0.5em 1.1em 0.5em 1.1em;
+    // width: 200px;
+    // height: 50px;
+
+  }
+
+  .info {
+    top: 160px;
+    right: 5px;
+  }
+
+  .bckImg {
+    height: 290px;
+  }
+
+  #navbar {
+    ul {
+      li {
+          padding-left: 7%;
+          padding-right: 7%;
+        }
+    }
+  }
+
+  .textDisplay {
+      @include paraStyle($h1fontSize/1.5,$fontFamily, 0);
+    top: 30px;
+    left: 20px;
+    z-index: 2;
+
+  }
+
+
+  .mapSize {
+    width: 300px;
+    height: 200px;
+  }
+
 }

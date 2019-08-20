@@ -1,6 +1,6 @@
 @media only screen and (min-width: 992px){
 
-  .info {
+  .info, .introParaMobile, .textDisplay {
     display: none;
   }
 
@@ -30,6 +30,7 @@
     	// padding-right: 2*$padding;
 
     }
+
 
 
 }

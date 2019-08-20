@@ -3,6 +3,10 @@
   line-height: 25px;
 }
 
+.introParaMobile {
+  @include paraStyle ($paraFontSize, $fontFamily, $padding);
+  line-height: 25px;
+}
 
 h1 {
   @include paraStyle ($h1fontSize, $fontFamily, $padding);
