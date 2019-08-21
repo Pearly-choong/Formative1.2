@@ -39,6 +39,7 @@
 .contactSubmitBtn {
     @include paraStyle($paraFontSize,$fontFamily,0);
     padding: 0.5em 1.3em 0.5em 1.3em;
+    margin: 0.5em;
     font-weight: bold;
     background-color: $greenColor;
     border: 2px solid $navTextColor;

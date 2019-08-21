@@ -8,6 +8,13 @@
   line-height: 25px;
 }
 
+.logoTag {
+  @include paraStyle (0.9em, $fontFamily, 2px);
+  letter-spacing: 1px;
+  padding-left: 20px;
+}
+
+
 h1 {
   @include paraStyle ($h1fontSize, $fontFamily, $padding);
   text-align: center;
