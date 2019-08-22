@@ -25,7 +25,7 @@
   }
 
 
-  .banner, .decoWrapper, .introPara, .overlay, .introParaTablet, .introParaMobile,  {
+  .banner, .decoWrapper, .introPara, .overlay, .introParaTablet  {
     display: none;
   }
 
@@ -68,7 +68,8 @@
 
   .logo {
     text-align: center;
-    margin-bottom: $margin;
+    margin-bottom: $margin/2;
+    margin-top: $margin;
   }
 
   .logoTag {
@@ -86,12 +87,12 @@
           padding-left: 10%;
           padding-right: 10%;
          a{
-
+           
          }
          a:hover {
            color: $navTextColor;
            background: $greenColor;
-           padding: 3*$padding;
+           padding: 2*$padding;
          } //end of hover
         } //end of li
       } //end of ul
@@ -112,8 +113,8 @@
   .button {
     position: absolute;
     @include paraStyle($h1fontSize/1.5,$fontFamily, 0);
-    top: 80px;
-    left: 250px;
+    top: 300px;
+    left: 300px;
     z-index: 2;
     // transform: translate(-50%, -50%);
     padding: 0.5em 1.1em 0.5em 1.1em;
@@ -126,8 +127,8 @@
   .info {
     @include paraStyle(1em,$fontFamily,$padding);
     position: absolute;
-    top: 160px;
-    right: 35px;
+    top: 390px;
+    right: 20px;
     // transform: translate(-50%, -50%);
     color: white;
     background-color: rgb(0,0,0);
@@ -136,7 +137,12 @@
     // margin-top: 5*$margin;
   }
 
-
+  .introParaMobile {
+    @include paraStyle ($paraFontSize, $fontFamily, 2*$padding);
+    line-height: 25px;
+    text-align: left;
+    padding-top: $padding/2;
+  }
   // .paraPosition {
   //    position: absolute;
   //    top: 67%;
@@ -205,12 +211,12 @@
 }
 
 
-@media only screen and (min-width: 375px) {
-    .inntroParaMobile {
-      @include paraStyle ($paraFontSize, $fontFamily, $padding);
-      line-height: 25px;
-    }
-}
+// @media only screen and (min-width: 375px) {
+//     .inntroParaMobile {
+//       @include paraStyle ($paraFontSize, $fontFamily, $padding);
+//       line-height: 25px;
+//     }
+// }
 
 @media only screen and (max-width: 375px){
   #sec1 {
@@ -224,7 +230,7 @@
   }
 
   #sec3 {
-    height: 1200px;
+    height: 1250px;
     padding: 0;
   }
 
@@ -239,12 +245,8 @@
   .button {
     // top: 70px;
     top: 230px;
-    left: 170px;
+    left: 190px;
     z-index: 2;
-    // padding: 0.5em 1.1em 0.5em 1.1em;
-    // width: 200px;
-    // height: 50px;
-
   }
 
   .introParaTablet {
@@ -308,6 +310,7 @@
     width: 300px;
     height: 200px;
   }
+
 
 
 

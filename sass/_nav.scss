@@ -5,6 +5,7 @@
   ul {
       display: inline-flex;
       margin: $margin;
+      width: 100%;
       li {
           padding-right: 2*$padding;
           padding-left: 2*$padding;
@@ -30,4 +31,5 @@
   content: "";
   clear: both;
   display: table;
+  width: 100%;
 }

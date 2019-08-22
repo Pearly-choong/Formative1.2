@@ -11,7 +11,8 @@
   position: relative; }
   #navbar ul {
     display: inline-flex;
-    margin: 5%; }
+    margin: 5%;
+    width: 100%; }
     #navbar ul li {
       padding-right: 8%;
       padding-left: 8%; }
@@ -28,7 +29,8 @@
 .clearfix {
   content: "";
   clear: both;
-  display: table; }
+  display: table;
+  width: 100%; }
 
 .banner {
   text-align: center; }
@@ -98,7 +100,8 @@
   width: 100%;
   height: 0; }
   .overlay a {
-    color: white; }
+    color: white;
+    cursor: pointer; }
 
 .imageBox:hover .overlay {
   bottom: 0;
@@ -199,8 +202,11 @@ header {
   padding: 4%; }
 
 .mapSize {
-  width: 900px;
+  width: 100%;
   height: 200px; }
+
+.row {
+  width: 100%; }
 
 .introPara, .paraText {
   font-size: 1.1em;
@@ -321,24 +327,30 @@ input[type=text], textarea {
 .fab:hover {
   color: #0d7339; }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
   #sec1 {
     width: 100%;
     height: 850px;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding-left: 8%;
+    padding-right: 8%; }
 
   #sec2 {
     width: 100%;
-    height: 1350px;
+    height: 1450px;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding-left: 4%;
+    padding-right: 4%; }
 
   #sec3 {
     width: 100%;
-    height: 1400px;
+    height: 1450px;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding-left: 4%;
+    padding-right: 4%; }
 
   .banner, .decoWrapper, .introPara, .paraText, .overlay, .introParaMobile {
     display: none; }
@@ -370,10 +382,6 @@ input[type=text], textarea {
     width: 100%;
     height: auto;
     box-shadow: none; }
-
-  .adjustPadding, #sec1, #sec2, #sec3 {
-    padding-left: 8%;
-    padding-right: 8%; }
 
   .logo {
     text-align: center;
@@ -516,7 +524,7 @@ input[type=text], textarea {
     padding: 0;
     margin: 0; }
 
-  .banner, .decoWrapper, .introPara, .paraText, .overlay, .introParaTablet, .introParaMobile {
+  .banner, .decoWrapper, .introPara, .paraText, .overlay, .introParaTablet {
     display: none; }
 
   .left, .right {
@@ -552,7 +560,8 @@ input[type=text], textarea {
 
   .logo {
     text-align: center;
-    margin-bottom: 5%; }
+    margin-bottom: 2.5%;
+    margin-top: 5%; }
 
   .logoTag {
     font-size: 1em;
@@ -571,7 +580,7 @@ input[type=text], textarea {
         #navbar ul li a:hover {
           color: #f3efdd;
           background: #0d7339;
-          padding: 12%; }
+          padding: 8%; }
 
   .container {
     height: 400px; }
@@ -586,8 +595,8 @@ input[type=text], textarea {
     font-size: 1.3333333333em;
     font-family: "Abel", sans-serif;
     padding: 0;
-    top: 80px;
-    left: 250px;
+    top: 300px;
+    left: 300px;
     z-index: 2;
     padding: 0.5em 1.1em 0.5em 1.1em;
     width: 200px;
@@ -598,11 +607,19 @@ input[type=text], textarea {
     font-family: "Abel", sans-serif;
     padding: 4%;
     position: absolute;
-    top: 160px;
-    right: 35px;
+    top: 390px;
+    right: 20px;
     color: white;
     background-color: black;
     background-color: rgba(0, 0, 0, 0.6); }
+
+  .introParaMobile {
+    font-size: 1.1em;
+    font-family: "Abel", sans-serif;
+    padding: 8%;
+    line-height: 25px;
+    text-align: left;
+    padding-top: 2%; }
 
   .menuCol {
     width: 100%;
@@ -651,12 +668,6 @@ input[type=text], textarea {
     margin-left: 10%;
     margin-right: 10%;
     font-size: 14px; } }
-@media only screen and (min-width: 375px) {
-  .inntroParaMobile {
-    font-size: 1.1em;
-    font-family: "Abel", sans-serif;
-    padding: 4%;
-    line-height: 25px; } }
 @media only screen and (max-width: 375px) {
   #sec1 {
     height: 667px;
@@ -667,7 +678,7 @@ input[type=text], textarea {
     padding: 0; }
 
   #sec3 {
-    height: 1200px;
+    height: 1250px;
     padding: 0; }
 
   .logo {
@@ -680,7 +691,7 @@ input[type=text], textarea {
 
   .button {
     top: 230px;
-    left: 170px;
+    left: 190px;
     z-index: 2; }
 
   .introParaTablet {
@@ -724,6 +735,119 @@ input[type=text], textarea {
   .mapSize {
     width: 300px;
     height: 200px; } }
+.menuModalContainer {
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  color: #f1f1f1; }
+
+.containerMenuList {
+  width: 100%;
+  height: 1500px;
+  padding-left: 8%;
+  text-align: left;
+  padding-bottom: 2%; }
+  .containerMenuList table {
+    font-size: 1.1em;
+    font-family: "Abel", sans-serif;
+    padding: 4%;
+    width: 100%;
+    height: auto;
+    float: left; }
+    .containerMenuList table .tableH {
+      font-size: 1.1em;
+      font-family: "Abel", sans-serif;
+      text-align: left;
+      padding-bottom: 30px;
+      font-size: 2em; }
+      .containerMenuList table .tableH tr td {
+        padding: 2%;
+        font-family: "Abel", sans-serif;
+        line-height: 25px; }
+
+.servingTime {
+  font-size: 1.1em;
+  font-family: "Abel", sans-serif;
+  text-align: center; }
+
+.menuHeading {
+  font-size: 2em;
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  padding: 3% 0 1% 0; }
+
+.price {
+  position: relative;
+  right: 90px; }
+
+.menuTitle {
+  color: #0d7339;
+  font-size: 1.1em; }
+
+.menuSet {
+  padding-top: 3%; }
+
+.lineLength {
+  padding-right: 80px; }
+
+span.code {
+  float: right;
+  padding-top: 15px;
+  padding-right: 20px; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 20px; }
+
+/* Modal Content/Box */
+.modalContent {
+  background-color: #f3efdd;
+  margin: 10% 10% 15% 10%;
+  margin: 10%;
+  border: 8px solid #0d7339;
+  width: 60%;
+  height: auto;
+  text-align: center; }
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #0d7339;
+  cursor: pointer; }
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s; }
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+@keyframes animatezoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
 #sec1, #sec2, #sec3 {
   padding-bottom: 4%; }
 

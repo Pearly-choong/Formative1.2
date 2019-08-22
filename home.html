@@ -33,13 +33,13 @@
 				</div>
 
 				<div id="navbar" class="right">
-					<hr class="lineWrapper"> <!-- for table and mobile -->
+					<hr class="lineWrapper">  <!-- for tablet and mobile -->
 					<ul>
 						<li><a href="home.html#sec1">Home</a></li>
 						<li><a href="home.html#sec2">Menu</a></li>
 						<li><a href="home.html#sec3">Contact</a></li>
 					</ul>
-					<hr class="lineWrapper"> <!-- for table and mobile -->
+					<hr class="lineWrapper">   <!-- for tablet and mobile -->
 				</div>
 			</div>
 			<hr class="decoWrapper"> <!-- for desktop -->
@@ -56,17 +56,17 @@
 					<a class="button" href="">Book A Table</a>
 				</div>
 				<br>
-				<!-- only display on table and mobile version  -->
+				<!-- only display on tablet and mobile version  -->
 				<div class="info">
 					<p>Tel : 04 499 52542</p>
 					<br>
 					<p>Mon-Fri : 6.30am - 2.00pm</p>
 					<p>Sat-Sun : 8.00am - 2.00pm<p>
 				</div>
-			</div>
 
-			<p class="introParaMobile">Americanos is set on becoming an iconic part of the Wellington dining market. Why not come and find out for yourself what makes Americanos an essential start to a Wellington day.</p>
 
+				<p class="introParaMobile">Americanos is set on becoming an iconic part of the Wellington dining market. Why not come and find out for yourself what makes Americanos an essential start to a Wellington day.</p>
+		</div>
 
 		</section>
 
@@ -80,7 +80,7 @@
 					<img class="breakfast" src="images/breakfastCrop2.jpg" alt="breakfast">
 						<p class="textDisplay"><a href="">Breakfast</a><p> <!-- mobile and tablet display -->
 						<div class="overlay"> <!-- only desktop -->
-							<div class="overlayText"><a href="">Breakfast</a></div>
+							<div class="overlayText"><a onclick="document.getElementById('id01').style.display='block'">Breakfast</a></div>
 						</div>
 				</div>
 
@@ -88,7 +88,7 @@
 					<img class="lunch" src="images/lunchCrop.jpg" alt="lunch">
 						<p class="textDisplay"><a href="">Lunch</a><p> <!-- mobile and tablet display -->
 					<div class="overlay">
-						<div class="overlayText"><a href="">Lunch</a></div>
+						<div class="overlayText"><a onclick="document.getElementById('id02').style.display='block'">Lunch</a></div>
 					</div>
 				</div>
 
@@ -153,7 +153,7 @@
 
 				<p class="paraText">Come and find out for yourself what makes Americanos an essential start to a Wellington day, the American food with a kiwi twist</p>
 				<br>
-				<div class="map">
+				<div class="map row">
 					<iframe class="mapSize" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.230821544791!2d174.7748441160573!3d-41.28208064806944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38ae2b396688f1%3A0xf9ff50d861ad00f7!2s32+Waring+Taylor+St%2C+Wellington%2C+6011!5e0!3m2!1sen!2snz!4v1566035916577!5m2!1sen!2snz" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 		</section>
@@ -174,6 +174,165 @@
 	</div>
 
 </div>
+
+<!-- breakfast menu modal -->
+	<div id="id01" class="modal">
+			<form class="modalContent animate">
+				<div class="menuModalContainer">
+				 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				</div>
+
+				<div class="containerMenuList">
+					<h1 class="menuHeading">All Day Breakfast Menu </h1>
+					<p class="servingTime">Served daily until 2.00pm.</p>
+					<table>
+						<th class="tableH"><b>Egg Breakfast</b></th>
+						<tr>
+							<td class="menuTitle lineLength"><i>Farmers Breakfast............................................................................................................................................................</i></td>
+							<td class="price">$19.90</td>
+						</tr>
+
+						<tr>
+							<td class="lineLength">Two eggs, with bacon, sausage, tomato, hashbrown, mushrooms oand corned beef hash.</td>
+							<td class="price"></td>
+						</tr>
+
+						<tr>
+							<td class="menuTitle menuSet lineLength"><i>Americano Special..............................................................................................................................................................</i></td>
+							<td class="price">$19.90</td>
+						</tr>
+
+						<tr>
+							<td class="lineLength">Two eggs, any style with hashbrown plus...<br><br>A choice of ONE of the following:<br>Bacon or ham or sausage or corned beef hash or mushrooms or grilled tomato-<br><br>AND also choose ONE of the following:<br> Two pancakes or one piece of French toast or half a waffle. </td>
+							<td class="price"></td>
+						</tr>
+
+						<tr>
+							<td class="menuTitle menuSet lineLength"><i>Americanos Three Egg Omelette......................................................................................................................................</i></td>
+							<td class="price">$18.20</td>
+						</tr>
+
+						<tr>
+							<td class="lineLength">Italian<br> Ham, salami, mushrooms, tomato & cheese. <br><br>Mediterranean<br> Spinach, bacon, tomato and cheese. </td>
+							<td class="price"></td>
+						</tr>
+
+						<tr>
+							<td class="menuTitle menuSet lineLength"><i>Egg Benedict......................................................................................................................................................................</i></td>
+							<td class="price">$19.90</td>
+						</tr>
+
+						<tr>
+							<td class="lineLength">An Americanos legend with two soft poached eggs served on a toasted English muffin with ...<br><br>A choice of ONE of the following:<br>Ham, bacon, salmon or spinach.<br> Topped with our famous Hollandaise sauce and served with a crispy hashbrown. </td>
+							<td class="price"></td>
+						</tr>
+					</table>
+
+			<!-- Americanos Options  -->
+					<table>
+						<th class="tableH"><b>Americanos Favourites</b></th>
+						<tr>
+							<td class="menuTitle lineLength"><i>Lox and Bagel.....................................................................................................................................................................</i></td>
+							<td class="price">$14.80</td>
+						</tr>
+
+						<tr>
+							<td class="lineLength">Smoked salmon and cream cheese in a poppy seed bagel with alfalfa sprouts, tomato and red onion slices. Served with hashbrown.</td>
+							<td class="price"></td>
+						</tr>
+
+						<tr>
+							<td class="menuTitle menuSet lineLength"><i>Chicken Enchiladas............................................................................................................................................................</i></td>
+							<td class="price">$18.20</td>
+						</tr>
+
+						<tr>
+							<td class="lineLength">Spicy Mexican chicken, red onions, bell peppers, sour cream and guacamole wrapped in two flour tortillas baked with salsa and havarti cheese, served with a hashbrown.</td>
+							<td class="price"></td>
+						</tr>
+
+						<tr>
+							<td class="menuTitle menuSet lineLength"><i>Bacon Bagel.........................................................................................................................................................................</i></td>
+							<td class="price">$14.50</td>
+						</tr>
+
+						<tr>
+							<td class="lineLength">Bacon with cream cheese, alfalfa sprouts, tomato and red onion in a poppy seed bagel. Served with a hashbrown.</td>
+							<td class="price"></td>
+						</tr>
+
+						<tr>
+							<td class="menuTitle menuSet lineLength"><i>Breakfast Burito.................................................................................................................................................................</i></td>
+							<td class="price">$19.90</td>
+						</tr>
+
+						<tr>
+							<td class="lineLength">Scrambled eggs, chicken, onion, peppers, havarti cheese and coriander wrapped in a flour tortilla with hot or mild salsa, sour cream and green onion with guacamole served with a hashbrown. Vegetarian option - with spinach and mushroom.</td>
+							<td class="price"></td>
+						</tr>
+					</table>
+			</form>
+
+	</div>
+
+
+	<!-- breakfast menu modal -->
+		<div id="id02" class="modal2">
+				<form class="modalContent animate">
+					<div class="menuModalContainer">
+					 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					</div>
+
+					<div class="containerMenuList">
+						<h1 class="menuHeading">Weekday Lunch Menu </h1>
+						<p class="servingTime">Served Monday-Friday 11am - 2pm.</p>
+						<table>
+
+							<tr>
+								<td class="menuTitle lineLength"><i>Soup of the Day............................................................................................................................................................</i></td>
+								<td class="price">$12.50</td>
+							</tr>
+
+							<tr>
+								<td class="lineLength">(Two varieties, please ask your waitress) Served with garlic bread.</td>
+								<td class="price"></td>
+							</tr>
+
+							<tr>
+								<td class="menuTitle menuSet lineLength"><i>Fish of the Day...........................................................................................................................................................</i></td>
+								<td class="price">$17.20</td>
+							</tr>
+
+							<tr>
+								<td class="lineLength">Lightly crumbed, our fresh fish fillets come with tartare sauce and lemon wedges, a hashbrown and side salad</td>
+								<td class="price"></td>
+							</tr>
+
+							<tr>
+								<td class="menuTitle menuSet lineLength"><i>Thai Chicken Salad......................................................................................................................................</i></td>
+								<td class="price">$18.20</td>
+							</tr>
+
+							<tr>
+								<td class="lineLength">Succulent chicken, marinated in Thai spices, mixed with cos lettuce, mesculin, tomatoes and cucumber. Complimented with crispy noodles, coriander and a refreshing yoghurt and chilli dressing.</td>
+								<td class="price"></td>
+							</tr>
+
+							<tr>
+								<td class="menuTitle menuSet lineLength"><i>BBQ Texas Burger......................................................................................................................................................................</i></td>
+								<td class="price">$19.50</td>
+							</tr>
+
+							<tr>
+								<td class="lineLength">Large, lean 175 gram ground beef patty topped with bacon, cheese, onion, tomato and pickles in a toasted bun with lettuce and our homemade BBQ sauce. Served with hashbrown and side salad</td>
+								<td class="price"></td>
+							</tr>
+						</table>
+				</form>
+
+		</div>
+
+
 
 <!-- back to top button -->
 		<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
