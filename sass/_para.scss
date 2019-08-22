@@ -3,7 +3,7 @@
   line-height: 25px;
 }
 
-.introParaMobile {
+.introParaTablet {
   @include paraStyle ($paraFontSize, $fontFamily, $padding);
   line-height: 25px;
 }

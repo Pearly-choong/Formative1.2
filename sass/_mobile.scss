@@ -12,7 +12,7 @@
 
    #sec2 {
     width: 100%;
-    height: 1100px;
+    height: 1250px;
     padding: 0;
     margin: 0;
   }
@@ -25,7 +25,7 @@
   }
 
 
-  .banner, .decoWrapper, .introPara, .overlay {
+  .banner, .decoWrapper, .introPara, .overlay, .introParaTablet, .introParaMobile,  {
     display: none;
   }
 
@@ -142,9 +142,15 @@
   //    top: 67%;
   // }
 
-  .menuCol, .contactCol {
+  .menuCol {
     width: 100%;
-    padding: $padding;
+    padding: 0;
+    margin-top: $margin;
+  }
+
+  .contactCol {
+    width: 100%;
+    padding: 2*$padding;
   }
 
   .textDisplay {
@@ -179,7 +185,8 @@
 
   .specialCol {
     margin : auto;
-    padding: 0em 0.7em 0em 0.7em;
+    padding: 0;
+    // padding: 0em 0.7em 0em 0.7em;
   }
 
   .mapSize {
@@ -198,6 +205,13 @@
 }
 
 
+@media only screen and (min-width: 375px) {
+    .inntroParaMobile {
+      @include paraStyle ($paraFontSize, $fontFamily, $padding);
+      line-height: 25px;
+    }
+}
+
 @media only screen and (max-width: 375px){
   #sec1 {
     height: 667px;
@@ -205,7 +219,7 @@
   }
 
    #sec2 {
-    height: 700px;
+    height: 850px;
     padding: 0;
   }
 
@@ -223,7 +237,8 @@
   }
 
   .button {
-    top: 70px;
+    // top: 70px;
+    top: 230px;
     left: 170px;
     z-index: 2;
     // padding: 0.5em 1.1em 0.5em 1.1em;
@@ -232,13 +247,18 @@
 
   }
 
+  .introParaTablet {
+    display: none;
+  }
+
   .info {
-    top: 160px;
+    // top: 160px;
+    top: 320px;
     right: 5px;
   }
 
   .bckImg {
-    height: 290px;
+    height: 280px;
   }
 
   #navbar {
@@ -253,9 +273,8 @@
     }
   }
 
-  .introParaTablet {
-    display: none;
-  }
+
+
 
   .textDisplay {
     @include paraStyle($h1fontSize/1.5,$fontFamily, 0);
@@ -265,6 +284,25 @@
     padding: $padding;
   }
 
+  .special {
+  	@include imgSize(330px, $imgHeight);
+  }
+
+
+  .imageBoxSpecialMobile {
+    // display: none;
+    @include imgEffect(relative,auto,hidden);
+    padding-top: 5*$padding;
+  }
+
+  // .menuCol, .specialCol {
+  //   padding: 0;
+  //   margin-top: $margin;
+  // }
+
+  .contactCol {
+    padding: 3*$padding;
+  }
 
   .mapSize {
     width: 300px;

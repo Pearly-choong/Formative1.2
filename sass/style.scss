@@ -15,10 +15,7 @@
 
 
 
-.adjustPadding {
-	padding-left: 2*$padding;
-	padding-right: 2*$padding;
-}
+
 
 #sec1, #sec2, #sec3 {
   @extend .adjustPadding;

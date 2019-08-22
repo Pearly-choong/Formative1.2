@@ -25,7 +25,7 @@
   }
 
 
-  .banner,.decoWrapper, .introPara, .overlay {
+  .banner,.decoWrapper, .introPara, .overlay, .introParaMobile {
     display: none;
   }
 
@@ -63,7 +63,8 @@
   }
 
   .adjustPadding {
-    padding: 0;
+  	padding-left: 2*$padding;
+  	padding-right: 2*$padding;
   }
 
   .logo {
@@ -139,7 +140,7 @@
     // margin-top: 5*$margin;
   }
 
-  .introParaMobile {
+  .introParaTablet {
     font-size: 1.3em;
     line-height: 30px;
   }
@@ -213,7 +214,9 @@
     padding: 12px;
   }
 
-
+  .imageBoxSpecialMobile {
+    display: none;
+  }
 
 
 }
