@@ -19,20 +19,22 @@ function topFunction() {
 }
 
 
-// Get the modal
-var modal = document.getElementById('id01');
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+//  modal menu list
 
+ $('#id01').hide();
+ $('#id02').show();
 
+$(document).ready(function(){
 
-var modal = document.getElementById('id02');
-window.onclick = function(event) {
-    if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-}
+  $('#breakfastBtn').click(function(){
+    $('#id01').show();
+    $('#id02').hide();
+  });
+
+  $('#lunchBtn').click(function(){
+    console.log('hi')
+    $('#id02').show();
+    $('#id01').hide();
+  });
+
+});

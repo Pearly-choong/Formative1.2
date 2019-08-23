@@ -797,7 +797,7 @@ span.code {
 
 /* The Modal (background) */
 .modal {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -812,7 +812,6 @@ span.code {
 /* Modal Content/Box */
 .modalContent {
   background-color: #f3efdd;
-  margin: 10% 10% 15% 10%;
   margin: 10%;
   border: 8px solid #0d7339;
   width: 60%;

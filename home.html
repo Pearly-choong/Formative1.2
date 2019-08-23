@@ -80,7 +80,8 @@
 					<img class="breakfast" src="images/breakfastCrop2.jpg" alt="breakfast">
 						<p class="textDisplay"><a href="">Breakfast</a><p> <!-- mobile and tablet display -->
 						<div class="overlay"> <!-- only desktop -->
-							<div class="overlayText"><a onclick="document.getElementById('id01').style.display='block'">Breakfast</a></div>
+							<!-- <div class="overlayText"><a onclick="document.getElementById('id01').style.display='block'">Breakfast</a></div> -->
+							<div id="breakfastBtn" class="overlayText"><a>Breakfast</a></div>
 						</div>
 				</div>
 
@@ -88,7 +89,7 @@
 					<img class="lunch" src="images/lunchCrop.jpg" alt="lunch">
 						<p class="textDisplay"><a href="">Lunch</a><p> <!-- mobile and tablet display -->
 					<div class="overlay">
-						<div class="overlayText"><a onclick="document.getElementById('id02').style.display='block'">Lunch</a></div>
+						<div id="lunchBtn" class="overlayText"><a>Lunch</a></div>
 					</div>
 				</div>
 
@@ -110,6 +111,165 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- breakfast menu modal -->
+				<div id="id01" class="modal">
+						<form id='americanoBreakfast' class="modalContent animate">
+							<div class="menuModalContainer">
+							 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+							</div>
+
+							<div class="containerMenuList">
+								<h1 class="menuHeading">All Day Breakfast Menu </h1>
+								<p class="servingTime">Served daily until 2.00pm.</p>
+								<table>
+									<th class="tableH"><b>Egg Breakfast</b></th>
+									<tr>
+										<td class="menuTitle lineLength"><i>Farmers Breakfast............................................................................................................................................................</i></td>
+										<td class="price">$19.90</td>
+									</tr>
+
+									<tr>
+										<td class="lineLength">Two eggs, with bacon, sausage, tomato, hashbrown, mushrooms oand corned beef hash.</td>
+										<td class="price"></td>
+									</tr>
+
+									<tr>
+										<td class="menuTitle menuSet lineLength"><i>Americano Special..............................................................................................................................................................</i></td>
+										<td class="price">$19.90</td>
+									</tr>
+
+									<tr>
+										<td class="lineLength">Two eggs, any style with hashbrown plus...<br><br>A choice of ONE of the following:<br>Bacon or ham or sausage or corned beef hash or mushrooms or grilled tomato-<br><br>AND also choose ONE of the following:<br> Two pancakes or one piece of French toast or half a waffle. </td>
+										<td class="price"></td>
+									</tr>
+
+									<tr>
+										<td class="menuTitle menuSet lineLength"><i>Americanos Three Egg Omelette......................................................................................................................................</i></td>
+										<td class="price">$18.20</td>
+									</tr>
+
+									<tr>
+										<td class="lineLength">Italian<br> Ham, salami, mushrooms, tomato & cheese. <br><br>Mediterranean<br> Spinach, bacon, tomato and cheese. </td>
+										<td class="price"></td>
+									</tr>
+
+									<tr>
+										<td class="menuTitle menuSet lineLength"><i>Egg Benedict......................................................................................................................................................................</i></td>
+										<td class="price">$19.90</td>
+									</tr>
+
+									<tr>
+										<td class="lineLength">An Americanos legend with two soft poached eggs served on a toasted English muffin with ...<br><br>A choice of ONE of the following:<br>Ham, bacon, salmon or spinach.<br> Topped with our famous Hollandaise sauce and served with a crispy hashbrown. </td>
+										<td class="price"></td>
+									</tr>
+								</table>
+
+						<!-- Americanos Options  -->
+								<table>
+									<th class="tableH"><b>Americanos Favourites</b></th>
+									<tr>
+										<td class="menuTitle lineLength"><i>Lox and Bagel.....................................................................................................................................................................</i></td>
+										<td class="price">$14.80</td>
+									</tr>
+
+									<tr>
+										<td class="lineLength">Smoked salmon and cream cheese in a poppy seed bagel with alfalfa sprouts, tomato and red onion slices. Served with hashbrown.</td>
+										<td class="price"></td>
+									</tr>
+
+									<tr>
+										<td class="menuTitle menuSet lineLength"><i>Chicken Enchiladas............................................................................................................................................................</i></td>
+										<td class="price">$18.20</td>
+									</tr>
+
+									<tr>
+										<td class="lineLength">Spicy Mexican chicken, red onions, bell peppers, sour cream and guacamole wrapped in two flour tortillas baked with salsa and havarti cheese, served with a hashbrown.</td>
+										<td class="price"></td>
+									</tr>
+
+									<tr>
+										<td class="menuTitle menuSet lineLength"><i>Bacon Bagel.........................................................................................................................................................................</i></td>
+										<td class="price">$14.50</td>
+									</tr>
+
+									<tr>
+										<td class="lineLength">Bacon with cream cheese, alfalfa sprouts, tomato and red onion in a poppy seed bagel. Served with a hashbrown.</td>
+										<td class="price"></td>
+									</tr>
+
+									<tr>
+										<td class="menuTitle menuSet lineLength"><i>Breakfast Burito.................................................................................................................................................................</i></td>
+										<td class="price">$19.90</td>
+									</tr>
+
+									<tr>
+										<td class="lineLength">Scrambled eggs, chicken, onion, peppers, havarti cheese and coriander wrapped in a flour tortilla with hot or mild salsa, sour cream and green onion with guacamole served with a hashbrown. Vegetarian option - with spinach and mushroom.</td>
+										<td class="price"></td>
+									</tr>
+								</table>
+						</form>
+
+				</div>
+
+
+				<!-- lunch menu modal -->
+					<div id="id02" class="modal">
+							<form id='americanoLunch' class="modalContent animate">
+								<div class="menuModalContainer">
+								 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+								</div>
+
+								<div class="containerMenuList">
+									<h1 class="menuHeading">Weekday Lunch Menu </h1>
+									<p class="servingTime">Served Monday-Friday 11am - 2pm.</p>
+									<table>
+
+										<tr>
+											<td class="menuTitle lineLength"><i>Soup of the Day............................................................................................................................................................</i></td>
+											<td class="price">$12.50</td>
+										</tr>
+
+										<tr>
+											<td class="lineLength">(Two varieties, please ask your waitress) Served with garlic bread.</td>
+											<td class="price"></td>
+										</tr>
+
+										<tr>
+											<td class="menuTitle menuSet lineLength"><i>Fish of the Day...........................................................................................................................................................</i></td>
+											<td class="price">$17.20</td>
+										</tr>
+
+										<tr>
+											<td class="lineLength">Lightly crumbed, our fresh fish fillets come with tartare sauce and lemon wedges, a hashbrown and side salad</td>
+											<td class="price"></td>
+										</tr>
+
+										<tr>
+											<td class="menuTitle menuSet lineLength"><i>Thai Chicken Salad......................................................................................................................................</i></td>
+											<td class="price">$18.20</td>
+										</tr>
+
+										<tr>
+											<td class="lineLength">Succulent chicken, marinated in Thai spices, mixed with cos lettuce, mesculin, tomatoes and cucumber. Complimented with crispy noodles, coriander and a refreshing yoghurt and chilli dressing.</td>
+											<td class="price"></td>
+										</tr>
+
+										<tr>
+											<td class="menuTitle menuSet lineLength"><i>BBQ Texas Burger......................................................................................................................................................................</i></td>
+											<td class="price">$19.50</td>
+										</tr>
+
+										<tr>
+											<td class="lineLength">Large, lean 175 gram ground beef patty topped with bacon, cheese, onion, tomato and pickles in a toasted bun with lettuce and our homemade BBQ sauce. Served with hashbrown and side salad</td>
+											<td class="price"></td>
+										</tr>
+									</table>
+							</form>
+
+					</div>
+
+
 		</section>
 
 
@@ -174,163 +334,6 @@
 	</div>
 
 </div>
-
-<!-- breakfast menu modal -->
-	<div id="id01" class="modal">
-			<form class="modalContent animate">
-				<div class="menuModalContainer">
-				 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-				</div>
-
-				<div class="containerMenuList">
-					<h1 class="menuHeading">All Day Breakfast Menu </h1>
-					<p class="servingTime">Served daily until 2.00pm.</p>
-					<table>
-						<th class="tableH"><b>Egg Breakfast</b></th>
-						<tr>
-							<td class="menuTitle lineLength"><i>Farmers Breakfast............................................................................................................................................................</i></td>
-							<td class="price">$19.90</td>
-						</tr>
-
-						<tr>
-							<td class="lineLength">Two eggs, with bacon, sausage, tomato, hashbrown, mushrooms oand corned beef hash.</td>
-							<td class="price"></td>
-						</tr>
-
-						<tr>
-							<td class="menuTitle menuSet lineLength"><i>Americano Special..............................................................................................................................................................</i></td>
-							<td class="price">$19.90</td>
-						</tr>
-
-						<tr>
-							<td class="lineLength">Two eggs, any style with hashbrown plus...<br><br>A choice of ONE of the following:<br>Bacon or ham or sausage or corned beef hash or mushrooms or grilled tomato-<br><br>AND also choose ONE of the following:<br> Two pancakes or one piece of French toast or half a waffle. </td>
-							<td class="price"></td>
-						</tr>
-
-						<tr>
-							<td class="menuTitle menuSet lineLength"><i>Americanos Three Egg Omelette......................................................................................................................................</i></td>
-							<td class="price">$18.20</td>
-						</tr>
-
-						<tr>
-							<td class="lineLength">Italian<br> Ham, salami, mushrooms, tomato & cheese. <br><br>Mediterranean<br> Spinach, bacon, tomato and cheese. </td>
-							<td class="price"></td>
-						</tr>
-
-						<tr>
-							<td class="menuTitle menuSet lineLength"><i>Egg Benedict......................................................................................................................................................................</i></td>
-							<td class="price">$19.90</td>
-						</tr>
-
-						<tr>
-							<td class="lineLength">An Americanos legend with two soft poached eggs served on a toasted English muffin with ...<br><br>A choice of ONE of the following:<br>Ham, bacon, salmon or spinach.<br> Topped with our famous Hollandaise sauce and served with a crispy hashbrown. </td>
-							<td class="price"></td>
-						</tr>
-					</table>
-
-			<!-- Americanos Options  -->
-					<table>
-						<th class="tableH"><b>Americanos Favourites</b></th>
-						<tr>
-							<td class="menuTitle lineLength"><i>Lox and Bagel.....................................................................................................................................................................</i></td>
-							<td class="price">$14.80</td>
-						</tr>
-
-						<tr>
-							<td class="lineLength">Smoked salmon and cream cheese in a poppy seed bagel with alfalfa sprouts, tomato and red onion slices. Served with hashbrown.</td>
-							<td class="price"></td>
-						</tr>
-
-						<tr>
-							<td class="menuTitle menuSet lineLength"><i>Chicken Enchiladas............................................................................................................................................................</i></td>
-							<td class="price">$18.20</td>
-						</tr>
-
-						<tr>
-							<td class="lineLength">Spicy Mexican chicken, red onions, bell peppers, sour cream and guacamole wrapped in two flour tortillas baked with salsa and havarti cheese, served with a hashbrown.</td>
-							<td class="price"></td>
-						</tr>
-
-						<tr>
-							<td class="menuTitle menuSet lineLength"><i>Bacon Bagel.........................................................................................................................................................................</i></td>
-							<td class="price">$14.50</td>
-						</tr>
-
-						<tr>
-							<td class="lineLength">Bacon with cream cheese, alfalfa sprouts, tomato and red onion in a poppy seed bagel. Served with a hashbrown.</td>
-							<td class="price"></td>
-						</tr>
-
-						<tr>
-							<td class="menuTitle menuSet lineLength"><i>Breakfast Burito.................................................................................................................................................................</i></td>
-							<td class="price">$19.90</td>
-						</tr>
-
-						<tr>
-							<td class="lineLength">Scrambled eggs, chicken, onion, peppers, havarti cheese and coriander wrapped in a flour tortilla with hot or mild salsa, sour cream and green onion with guacamole served with a hashbrown. Vegetarian option - with spinach and mushroom.</td>
-							<td class="price"></td>
-						</tr>
-					</table>
-			</form>
-
-	</div>
-
-
-	<!-- breakfast menu modal -->
-		<div id="id02" class="modal2">
-				<form class="modalContent animate">
-					<div class="menuModalContainer">
-					 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-					</div>
-
-					<div class="containerMenuList">
-						<h1 class="menuHeading">Weekday Lunch Menu </h1>
-						<p class="servingTime">Served Monday-Friday 11am - 2pm.</p>
-						<table>
-
-							<tr>
-								<td class="menuTitle lineLength"><i>Soup of the Day............................................................................................................................................................</i></td>
-								<td class="price">$12.50</td>
-							</tr>
-
-							<tr>
-								<td class="lineLength">(Two varieties, please ask your waitress) Served with garlic bread.</td>
-								<td class="price"></td>
-							</tr>
-
-							<tr>
-								<td class="menuTitle menuSet lineLength"><i>Fish of the Day...........................................................................................................................................................</i></td>
-								<td class="price">$17.20</td>
-							</tr>
-
-							<tr>
-								<td class="lineLength">Lightly crumbed, our fresh fish fillets come with tartare sauce and lemon wedges, a hashbrown and side salad</td>
-								<td class="price"></td>
-							</tr>
-
-							<tr>
-								<td class="menuTitle menuSet lineLength"><i>Thai Chicken Salad......................................................................................................................................</i></td>
-								<td class="price">$18.20</td>
-							</tr>
-
-							<tr>
-								<td class="lineLength">Succulent chicken, marinated in Thai spices, mixed with cos lettuce, mesculin, tomatoes and cucumber. Complimented with crispy noodles, coriander and a refreshing yoghurt and chilli dressing.</td>
-								<td class="price"></td>
-							</tr>
-
-							<tr>
-								<td class="menuTitle menuSet lineLength"><i>BBQ Texas Burger......................................................................................................................................................................</i></td>
-								<td class="price">$19.50</td>
-							</tr>
-
-							<tr>
-								<td class="lineLength">Large, lean 175 gram ground beef patty topped with bacon, cheese, onion, tomato and pickles in a toasted bun with lettuce and our homemade BBQ sauce. Served with hashbrown and side salad</td>
-								<td class="price"></td>
-							</tr>
-						</table>
-				</form>
-
-		</div>
 
 
 
